@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Job&Process Scheduling CPU - 4AI_Michael-Tifi</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+  <div>
+  <button onclick="mostraTa('table1')">FCFS</button>
+  <button onclick="mostraTa('table2')">SJF</button>
+</div>
+
+  
+</head>
+<body>
+<script src="script.js"></script>
+<div id="table1" style="display:none;">
+<h2> Scheduling FCFS simulator </h2>
+  <table class="styled-table" border="1" id="idTable">
+  <thead> <!-- testa della tabella -->
+      <tr>
+          <th>Process</th>
+          <th>Arrival Time</th>
+          <th>Burst Time</th>
+          <th>Remaining Burst Time</th>
+      </tr>
+  </thead>
+  <tbody> <!-- corpo della tabella -->
+  </tbody>
+  </table>
+</div>
+  <div id="table2" style="display:none;">
+  <h3>SJF </h3>
+  
+  <!--bottoni -->
+  </div>
+<div>
+<button id="idReset" onclick="reset()"> Reset </button>
+<button id="idStart" onclick="start()"> Start </button>
+<button id="idStep" onclick="step()"> Step </button>
+</div>
+  <div>
+    <!-- le varie statistiche -->
+    <p id="idTime"></p>
+<p id="idStatistics"></p>
+  </div>
+</body>
+</html>
